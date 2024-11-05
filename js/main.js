@@ -92,14 +92,33 @@ const products = [
     }
 ];
 
+// Function to display products
+function loadProducts() {
+    const productList = document.getElementById("product-list");
+    products.forEach(product => {
+        const productElement = document.createElement("div");
+        productElement.classList.add("product-item");
+
+        productElement.innerHTML = `
+            <img src="${product.imageUrl}" alt="${product.name}">
+            <h3>${product.name}</h3>
+            <p>$${product.price}</p>
+            <button onclick="addToCart(${product.id})">Add to Cart</button>
+        `;
+
+        productList.appendChild(productElement);
+    });
+}
+
+
+// Call loadProducts on page load to display the products
+document.addEventListener("DOMContentLoaded", loadProducts);
+
 
 // Initialize cart from localStorage or create a new array
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Navigate to products page
-function navigateToProducts() {
-    window.location.href = "products.html";
-}
+
 
 // Add a product to the cart
 function addToCart(productId) {
