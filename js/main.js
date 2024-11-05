@@ -1,10 +1,97 @@
-// Sample products array (for demonstration)
+
 const products = [
-    { id: 1, name: "Dog Toy", price: 15.99, imageUrl: "images/dog-toy.jpg" },
-    { id: 2, name: "Cat Bed", price: 25.50, imageUrl: "images/cat-bed.jpg" },
-    { id: 3, name: "Bird Feeder", price: 12.99, imageUrl: "images/bird-feeder.jpg" },
-    // Add more products as needed
+    {
+        id: 1,
+        name: "Dog Toy - Plush Squeaky",
+        price: 15.99,
+        imageUrl: "https://via.placeholder.com/150?text=Dog+Toy+Plush+Squeaky"
+    },
+    {
+        id: 2,
+        name: "Cat Bed - Cozy Design",
+        price: 25.50,
+        imageUrl: "https://via.placeholder.com/150?text=Cat+Bed+Cozy+Design"
+    },
+    {
+        id: 3,
+        name: "Bird Feeder - Wooden",
+        price: 12.99,
+        imageUrl: "https://via.placeholder.com/150?text=Bird+Feeder+Wooden"
+    },
+    {
+        id: 4,
+        name: "Dog Collar - Adjustable",
+        price: 9.99,
+        imageUrl: "https://via.placeholder.com/150?text=Dog+Collar+Adjustable"
+    },
+    {
+        id: 5,
+        name: "Cat Litter Box - Self-Cleaning",
+        price: 89.99,
+        imageUrl: "https://via.placeholder.com/150?text=Cat+Litter+Box+Self-Cleaning"
+    },
+    {
+        id: 6,
+        name: "Pet Shampoo - Natural Ingredients",
+        price: 14.50,
+        imageUrl: "https://via.placeholder.com/150?text=Pet+Shampoo+Natural"
+    },
+    {
+        id: 7,
+        name: "Dog Leash - Reflective",
+        price: 19.99,
+        imageUrl: "https://via.placeholder.com/150?text=Dog+Leash+Reflective"
+    },
+    {
+        id: 8,
+        name: "Cat Scratching Post - Multi-Level",
+        price: 49.99,
+        imageUrl: "https://via.placeholder.com/150?text=Cat+Scratching+Post"
+    },
+    {
+        id: 9,
+        name: "Aquarium Kit - Complete Setup",
+        price: 199.99,
+        imageUrl: "https://via.placeholder.com/150?text=Aquarium+Kit"
+    },
+    {
+        id: 10,
+        name: "Pet Carrier - Travel Friendly",
+        price: 39.99,
+        imageUrl: "https://via.placeholder.com/150?text=Pet+Carrier+Travel"
+    },
+    {
+        id: 11,
+        name: "Dog Food - Grain Free",
+        price: 34.99,
+        imageUrl: "https://via.placeholder.com/150?text=Dog+Food+Grain+Free"
+    },
+    {
+        id: 12,
+        name: "Cat Treats - Salmon Flavor",
+        price: 5.99,
+        imageUrl: "https://via.placeholder.com/150?text=Cat+Treats+Salmon"
+    },
+    {
+        id: 13,
+        name: "Pet Bed - Orthopedic Foam",
+        price: 79.99,
+        imageUrl: "https://via.placeholder.com/150?text=Pet+Bed+Orthopedic"
+    },
+    {
+        id: 14,
+        name: "Dog Bowls - Stainless Steel",
+        price: 11.99,
+        imageUrl: "https://via.placeholder.com/150?text=Dog+Bowls+Stainless"
+    },
+    {
+        id: 15,
+        name: "Interactive Cat Toy - Laser Pointer",
+        price: 19.99,
+        imageUrl: "https://via.placeholder.com/150?text=Cat+Toy+Laser+Pointer"
+    }
 ];
+
 
 // Initialize cart from localStorage or create a new array
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
