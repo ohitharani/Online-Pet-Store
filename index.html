@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Pet Store</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Trending Shops - Online Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to the Online Pet Store</h1>
+        <h1>Trending Shops</h1>
         <nav>
-            <a href="products.html">Browse Products</a>
+            <a href="index.html">Home</a>
             <a href="cart.html">View Cart</a>
         </nav>
     </header>
 
-    <section class="intro">
-        <h2>Your One-Stop Shop for Pet Supplies</h2>
-        <p>Browse our wide selection of pet products, including food, toys, and accessories.</p>
-        <button onclick="navigateToProducts()">Start Shopping</button>
+    <!-- Product Categories -->
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="images/category-dogs.jpg" alt="Dogs">
+                <h3>Dogs</h3>
+            </div>
+            <div class="category-item">
+                <img src="images/category-cats.jpg" alt="Cats">
+                <h3>Cats</h3>
+            </div>
+            <div class="category-item">
+                <img src="images/category-birds.jpg" alt="Birds">
+                <h3>Birds</h3>
+            </div>
+            <div class="category-item">
+                <img src="images/category-small-pets.jpg" alt="Small Pets">
+                <h3>Small Pets</h3>
+            </div>
+        </div>
     </section>
-<footer>
-    <p>© 2024 Online Pet Store. All rights reserved.</p>
-</footer>
-    <script src="js/main.js"></script>
+
+    <!-- Trending Products -->
+    <section class="trending-products">
+        <h2>Trending Products</h2>
+        <div id="product-list" class="product-list"></div>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>
