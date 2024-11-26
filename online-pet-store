@@ -1,8 +1,10 @@
-online-pet-store
-├── index.html
-├── products.html
-├── cart.html
-├── css
-│   └── styles.css
-└── js
-    └── main.js
+/project-directory
+  ├── index.html
+  ├── styles.css
+  ├── main.js
+  ├── products.json
+  ├── images/
+       ├── product1.jpg
+       ├── product2.jpg
+       ├── product3.jpg
+       └── ...
