@@ -1,6 +1,7 @@
 /online-pet-store
   ├── index.html
   ├── products.html
+  ├── cart.html
   ├── styles.css
   ├── main.js
   ├── images/
