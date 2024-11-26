@@ -55,4 +55,10 @@ function addToCart(productId) {
 // Function to update cart count on the home and products pages
 function updateCartCount() {
     const cartCount = cart.length;
-    document.getElement
+    document.getElementById("cart-count").textContent = cartCount;
+}
+
+// Load products when the page is ready
+if (document.getElementById("product-list-container")) {
+    loadProductsPage();
+}
