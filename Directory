@@ -1,8 +1,8 @@
-/project-directory
+/online-pet-store
   ├── index.html
+  ├── products.html
   ├── styles.css
   ├── main.js
-  ├── products.json
   ├── images/
        ├── product1.jpg
        ├── product2.jpg
