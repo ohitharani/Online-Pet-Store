@@ -45,35 +45,4 @@ header nav a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.product-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product-item h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
-
-.product-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.product-item button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.product-item button:hover {
-    background-color: #218838;
-}
+    text-align
