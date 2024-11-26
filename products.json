@@ -1,0 +1,7 @@
+[
+    { "id": 1, "name": "Dog Toy - Plush Squeaky", "price": 15.99, "imageUrl": "images/product1.jpg" },
+    { "id": 2, "name": "Cat Bed - Cozy Design", "price": 25.50, "imageUrl": "images/product2.jpg" },
+    { "id": 3, "name": "Bird Feeder - Wooden", "price": 12.99, "imageUrl": "images/product3.jpg" },
+    { "id": 4, "name": "Dog Collar - Adjustable", "price": 9.99, "imageUrl": "images/product4.jpg" },
+    { "id": 5, "name": "Pet Shampoo - Natural Ingredients", "price": 14.50, "imageUrl": "images/product5.jpg" }
+]
