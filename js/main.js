@@ -22,10 +22,8 @@ const products = [
     { id: 20, name: "Bird Cage - Large", price: 99.99, imageUrl: "https://via.placeholder.com/150?text=Bird+Cage+Large" },
 ];
 
-// Initialize cart if it doesn't exist in localStorage
-if (!localStorage.getItem('cart')) {
-    localStorage.setItem('cart', JSON.stringify([]));
-}
+// Cart array to store cart items during session
+let cart = [];
 
 // Function to load products on the Products page
 function loadProductsPage() {
@@ -48,17 +46,14 @@ function loadProductsPage() {
 
 // Function to add products to the cart
 function addToCart(productId) {
-    const cart = JSON.parse(localStorage.getItem('cart'));
     const product = products.find(p => p.id === productId);
     cart.push(product);
-    localStorage.setItem('cart', JSON.stringify(cart));
-
     updateCartCount();
+    alert(`${product.name} has been added to your cart!`);
 }
 
 // Function to update cart count on the home and products pages
 function updateCartCount() {
-    const cart = JSON.parse(localStorage.getItem('cart'));
     const cartCount = cart.length;
     document.getElementById("cart-count").textContent = cartCount;
 }
@@ -66,7 +61,6 @@ function updateCartCount() {
 // Function to load cart items on the Cart page
 function loadCartPage() {
     const cartListContainer = document.getElementById("cart-list-container");
-    const cart = JSON.parse(localStorage.getItem('cart'));
     let total = 0;
 
     cartListContainer.innerHTML = ""; // Clear previous items
@@ -91,11 +85,9 @@ function loadCartPage() {
 
 // Function to handle checkout
 function checkout() {
-    const cart = JSON.parse(localStorage.getItem('cart'));
-
     if (cart.length > 0) {
         alert("Thank you for your purchase!");
-        localStorage.setItem('cart', JSON.stringify([])); // Clear the cart
+        cart = []; // Clear cart after checkout
         loadCartPage(); // Reload the cart page to reflect empty cart
     } else {
         alert("Your cart is empty.");
@@ -114,4 +106,3 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCartCount(); // Update cart count on the homepage
     }
 });
-
