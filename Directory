@@ -1,11 +1,9 @@
 /online-pet-store
-  ├── index.html
-  ├── products.html
-  ├── cart.html
-  ├── styles.css
-  ├── main.js
-  ├── images/
-       ├── product1.jpg
-       ├── product2.jpg
-       ├── product3.jpg
-       └── ...
+    /css
+        - styles.css
+    /js
+        - main.js
+    index.html
+    products.html
+    cart.html
+
