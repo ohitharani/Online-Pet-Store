@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Your Cart - Online Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>Your Cart</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="products.html">Browse Products</a>
+            <a href="products.html">Shop Now</a>
         </nav>
     </header>
 
-    <section id="cart-list" class="cart-list">
-        <!-- Cart items will be dynamically loaded here -->
+    <!-- Cart List Section -->
+    <section class="cart-list">
+        <h2>Items in Your Cart</h2>
+        <div id="cart-list-container" class="cart-list-container">
+            <!-- Cart items will be dynamically loaded here -->
+        </div>
+        <div id="cart-total"></div>
+        <button id="checkout-button">Proceed to Checkout</button>
     </section>
-    <button onclick="checkout()">Checkout</button>
 
-    <script src="js/main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
