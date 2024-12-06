@@ -1,140 +1,133 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #2f3640;
+header {
+    background-color: #333;
+    color: white;
     padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    text-align: center;
 }
 
-.navbar .container {
+.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: 0 auto;
+    gap: 20px;
 }
 
-.navbar .logo {
-    color: #fff;
-    font-size: 1.8em;
-    font-weight: bold;
+.navbar a {
+    color: white;
     text-decoration: none;
+    font-size: 18px;
 }
 
-.navbar .nav-links {
-    display: flex;
-    list-style: none;
+.navbar a:hover {
+    color: #ff6347;
 }
 
-.navbar .nav-links li {
-    margin-left: 20px;
+.banner {
+    background-image: url('https://via.placeholder.com/1920x600?text=Christmas+Sale');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
 }
 
-.navbar .nav-links li a {
-    color: #fff;
+.banner h1 {
+    font-size: 3em;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.shop-now-btn {
+    background-color: #ff6347;
+    padding: 15px 30px;
+    color: white;
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.3s;
-}
-
-.navbar .nav-links li a:hover {
-    color: #f39c12;
-}
-
-/* Banner Section */
-#banner {
-    background: url('https://via.placeholder.com/1920x600?text=Christmas+Sale') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-#banner h2 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-}
-
-#banner p {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-#banner .btn-shop-now {
-    background-color: #e17055;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.3em;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
-#banner .btn-shop-now:hover {
-    background-color: #d63031;
+.shop-now-btn:hover {
+    background-color: #ff4500;
 }
 
-/* Categories Section */
-#categories {
-    padding: 60px 0;
-    background-color: #f1f1f1;
-}
-
-#categories h2 {
+.categories {
+    padding: 40px 0;
     text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
 }
 
 .category-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
-.category-card {
-    background-color: #fff;
+.category-item {
+    width: 200px;
     text-align: center;
-    width: 280px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.category-item img {
+    width: 100%;
     border-radius: 8px;
-    overflow: hidden;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
     transition: transform 0.3s;
 }
 
-.category-card:hover {
+.product-card:hover {
     transform: scale(1.05);
 }
 
-.category-card img {
+.product-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 8px;
 }
 
-.category-card h3 {
-    padding: 20px;
-    font-size: 1.5em;
-    color: #2f3640;
+.product-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #ff4500;
 }
 
 /* Footer */
-#main-footer {
-    background-color: #2f3640;
-    color: #fff;
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px 0;
-}
-
-#main-footer p {
-    margin: 0;
 }
