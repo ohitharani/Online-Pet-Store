@@ -5,67 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Pet Store</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Online Pet Store</a>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="category.html">Categories</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="about.html">About</a></li>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Online Pet Store</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Banner Section -->
-    <section id="banner">
-        <div class="banner-content">
-            <h2>Celebrate Christmas with Us!</h2>
-            <p>Use code <strong>XMAS20</strong> for 20% off this festive season.</p>
-            <a href="products.html" class="btn-shop-now">Shop Now</a>
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Welcome to Our Online Pet Store!</h1>
+            <p>Shop Now and get 20% off with code <strong>XMAS20</strong></p>
+            <a href="products.html" class="shop-now-btn">Shop Now</a>
         </div>
     </section>
 
     <!-- Categories Section -->
-    <section id="categories">
-        <div class="container">
-            <h2>Explore Categories</h2>
-            <div class="category-container">
-                <a href="category.html?category=Pets" class="category-card">
-                    <img src="https://via.placeholder.com/300x200?text=Pets" alt="Pets">
-                    <h3>Pets</h3>
-                </a>
-                <a href="category.html?category=Pet%20Food" class="category-card">
-                    <img src="https://via.placeholder.com/300x200?text=Pet+Food" alt="Pet Food">
-                    <h3>Pet Food</h3>
-                </a>
-                <a href="category.html?category=Accessories" class="category-card">
-                    <img src="https://via.placeholder.com/300x200?text=Accessories" alt="Accessories">
-                    <h3>Accessories</h3>
-                </a>
-                <a href="category.html?category=Supplies" class="category-card">
-                    <img src="https://via.placeholder.com/300x200?text=Supplies" alt="Supplies">
-                    <h3>Supplies</h3>
-                </a>
-                <a href="category.html?category=Cages" class="category-card">
-                    <img src="https://via.placeholder.com/300x200?text=Cages" alt="Cages">
-                    <h3>Cages</h3>
-                </a>
-            </div>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-container">
+            <a href="products.html?category=Pets" class="category-item">
+                <img src="https://via.placeholder.com/200x150?text=Pets" alt="Pets">
+                <h3>Pets</h3>
+            </a>
+            <a href="products.html?category=Pet+Food" class="category-item">
+                <img src="https://via.placeholder.com/200x150?text=Pet+Food" alt="Pet Food">
+                <h3>Pet Food</h3>
+            </a>
+            <a href="products.html?category=Accessories" class="category-item">
+                <img src="https://via.placeholder.com/200x150?text=Accessories" alt="Accessories">
+                <h3>Accessories</h3>
+            </a>
+            <a href="products.html?category=Cages" class="category-item">
+                <img src="https://via.placeholder.com/200x150?text=Cages" alt="Cages">
+                <h3>Cages</h3>
+            </a>
+            <!-- Add more categories as needed -->
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
-        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Pet Store</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
 </body>
 </html>
