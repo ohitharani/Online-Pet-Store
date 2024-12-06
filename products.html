@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Our Products</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="cart.html">View Cart (<span id="cart-count">0</span>)</a>
+            <div class="logo">Online Pet Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Product List Section -->
-    <section class="product-list">
-        <h2>Our Products</h2>
-        <div id="product-list-container" class="product-list-container">
-            <!-- Products will be dynamically loaded here -->
-        </div>
-    </section>
+    <main>
+        <h1>Our Products</h1>
+        <div id="products-list" class="products-grid"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Online Pet Store</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
