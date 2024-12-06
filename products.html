@@ -3,33 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Online Pet Store</title>
+    <title>Online Pet Store - Products</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
-    <header id="main-header">
-        <div class="container">
-            <h1>Our Products</h1>
-            <p>Browse through our collection of pet supplies and accessories!</p>
-        </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Online Pet Store</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Products Section -->
-    <section id="product-list">
-        <h2>Available Products</h2>
-        <div class="product-container" id="product-container">
+    <!-- Product Section -->
+    <section id="products" class="product-container">
+        <h2>Products</h2>
+        <div id="product-list" class="product-list">
             <!-- Products will be dynamically loaded here -->
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
-        </div>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Online Pet Store</p>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
