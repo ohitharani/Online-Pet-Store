@@ -13,39 +13,83 @@ const products = [
     // Add more products as needed
 ];
 
-// Function to display products based on category
-const urlParams = new URLSearchParams(window.location.search);
-const category = urlParams.get("category");
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-if (category) {
-    const filteredProducts = products.filter(product => product.category === category);
-    const productContainer = document.getElementById("products");
-    productContainer.innerHTML = "";
+// Display Products
+const displayProducts = (category = null) => {
+    const productList = document.getElementById("product-list");
+    productList.innerHTML = ""; // Clear previous products
+    let filteredProducts = category ? products.filter(p => p.category === category) : products;
 
-    if (filteredProducts.length === 0) {
-        productContainer.innerHTML = "<p>No products found in this category.</p>";
-    } else {
-        filteredProducts.forEach(product => {
-            productContainer.innerHTML += `
-                <div class="product-card">
-                    <img src="${product.imageUrl}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>Price: $${product.price}</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            `;
-        });
-    }
-} else {
-    const productContainer = document.getElementById("products");
-    products.forEach(product => {
-        productContainer.innerHTML += `
+    filteredProducts.forEach(product => {
+        productList.innerHTML += `
             <div class="product-card">
                 <img src="${product.imageUrl}" alt="${product.name}">
                 <h3>${product.name}</h3>
                 <p>Price: $${product.price}</p>
-                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart" onclick="addToCart(${product.id})">Add to Cart</button>
             </div>
         `;
     });
+};
+
+// Add Product to Cart
+const addToCart = (productId) => {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        cart.push(product);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+    }
+};
+
+// Update Cart Count
+const updateCartCount = () => {
+    document.getElementById("cart-count").textContent = cart.length;
+};
+
+// Display Cart Items
+const displayCartItems = () => {
+    const cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = ""; // Clear previous cart items
+    let totalPrice = 0;
+
+    cart.forEach(item => {
+        cartItems.innerHTML += `
+            <div class="cart-item">
+                <img src="${item.imageUrl}" alt="${item.name}">
+                <h3>${item.name}</h3>
+                <p>$${item.price}</p>
+            </div>
+        `;
+        totalPrice += item.price;
+    });
+
+    document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+};
+
+// Apply Coupon Code for Discount
+document.getElementById("apply-coupon").addEventListener("click", () => {
+    const couponCode = document.getElementById("coupon-code").value.trim();
+    let totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+
+    if (couponCode === "XMAS20") {
+        totalPrice *= 0.8; // Apply 20% discount
+        alert("Coupon applied! You got a 20% discount.");
+    }
+
+    document.getElementById("total-price").textContent = totalPrice.toFixed(2);
+});
+
+// Initial Page Load
+if (window.location.pathname === "/products.html") {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get("category");
+    displayProducts(category);
 }
+
+if (window.location.pathname === "/cart.html") {
+    displayCartItems();
+}
+
+updateCartCount(); // Update cart count on all pages
