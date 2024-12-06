@@ -1,8 +1,25 @@
 // Products Data
 const products = [
-    { id: 1, name: "Dog Toy - Plush Squeaky", category: "Accessories", price: 15.99, imageUrl: "https://via.placeholder.com/200?text=Dog+Toy" },
-    { id: 2, name: "Cat Bed - Cozy Design", category: "Accessories", price: 25.50, imageUrl: "https://via.placeholder.com/200?text=Cat+Bed" },
-    // Add more products as needed...
+    { id: 1, name: "Golden Retriever Puppy", category: "Pets", price: 800, imageUrl: "https://via.placeholder.com/200?text=Golden+Retriever" },
+    { id: 2, name: "Persian Cat", category: "Pets", price: 600, imageUrl: "https://via.placeholder.com/200?text=Persian+Cat" },
+    { id: 3, name: "Parakeet", category: "Pets", price: 50, imageUrl: "https://via.placeholder.com/200?text=Parakeet" },
+    { id: 4, name: "Tropical Fish Set", category: "Pets", price: 120, imageUrl: "https://via.placeholder.com/200?text=Tropical+Fish" },
+    { id: 5, name: "Premium Dog Food", category: "Pet Food", price: 30, imageUrl: "https://via.placeholder.com/200?text=Dog+Food" },
+    { id: 6, name: "Cat Food - Salmon Flavor", category: "Pet Food", price: 25, imageUrl: "https://via.placeholder.com/200?text=Cat+Food" },
+    { id: 7, name: "Bird Seed Mix", category: "Pet Food", price: 10, imageUrl: "https://via.placeholder.com/200?text=Bird+Food" },
+    { id: 8, name: "Fish Flakes", category: "Pet Food", price: 8, imageUrl: "https://via.placeholder.com/200?text=Fish+Food" },
+    { id: 9, name: "Chew Toy for Dogs", category: "Accessories", price: 15, imageUrl: "https://via.placeholder.com/200?text=Dog+Chew+Toy" },
+    { id: 10, name: "Cat Scratching Post", category: "Accessories", price: 40, imageUrl: "https://via.placeholder.com/200?text=Cat+Post" },
+    { id: 11, name: "Bird Cage Swing", category: "Accessories", price: 12, imageUrl: "https://via.placeholder.com/200?text=Bird+Swing" },
+    { id: 12, name: "Fish Tank Decorations", category: "Accessories", price: 20, imageUrl: "https://via.placeholder.com/200?text=Tank+Decor" },
+    { id: 13, name: "Small Pet Cage", category: "Cages", price: 150, imageUrl: "https://via.placeholder.com/200?text=Small+Cage" },
+    { id: 14, name: "Large Dog Kennel", category: "Cages", price: 250, imageUrl: "https://via.placeholder.com/200?text=Dog+Kennel" },
+    { id: 15, name: "Bird Cage with Stand", category: "Cages", price: 180, imageUrl: "https://via.placeholder.com/200?text=Bird+Cage" },
+    { id: 16, name: "Hamster Wheel", category: "Accessories", price: 25, imageUrl: "https://via.placeholder.com/200?text=Hamster+Wheel" },
+    { id: 17, name: "Aquarium Heater", category: "Supplies", price: 45, imageUrl: "https://via.placeholder.com/200?text=Aquarium+Heater" },
+    { id: 18, name: "Dog Leash - Adjustable", category: "Accessories", price: 18, imageUrl: "https://via.placeholder.com/200?text=Dog+Leash" },
+    { id: 19, name: "Reptile Terrarium", category: "Cages", price: 300, imageUrl: "https://via.placeholder.com/200?text=Terrarium" },
+    { id: 20, name: "Cat Litter Box", category: "Supplies", price: 50, imageUrl: "https://via.placeholder.com/200?text=Cat+Litter+Box" }
 ];
 
 // Load Products Based on Category
