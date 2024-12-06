@@ -11,53 +11,45 @@
     <header id="main-header">
         <div class="container">
             <h1>Welcome to Online Pet Store</h1>
-            <p>Your one-stop shop for all pet needs!</p>
+            <p>Find everything your pet needs!</p>
         </div>
     </header>
 
-    <!-- Christmas Sale Banner -->
-    <section id="sale-banner">
-        <h1>🎄 Christmas Sale! 🎄</h1>
-        <p>Shop Now and Get 20% Off! Use Code: <strong>XMAS20</strong></p>
-        <a href="products.html" class="shop-now-btn">Shop Now</a>
+    <!-- Shop Now Banner -->
+    <section id="banner">
+        <div class="container">
+            <h2>Shop Now</h2>
+            <p>Enjoy 20% off during Christmas with code <strong>XMAS20</strong></p>
+            <a href="products.html" class="btn">Start Shopping</a>
+        </div>
     </section>
 
     <!-- Categories Section -->
     <section id="categories">
-        <h2>Explore Our Categories</h2>
-        <div class="category-container">
-            <div class="category">
-                <a href="products.html#pets">
+        <div class="container">
+            <h2>Explore Categories</h2>
+            <div class="category-container">
+                <a href="category.html?category=Pets" class="category">
                     <img src="https://via.placeholder.com/200?text=Pets" alt="Pets">
                     <h3>Pets</h3>
                 </a>
-            </div>
-            <div class="category">
-                <a href="products.html#pet-food">
+                <a href="category.html?category=Pet%20Food" class="category">
                     <img src="https://via.placeholder.com/200?text=Pet+Food" alt="Pet Food">
                     <h3>Pet Food</h3>
                 </a>
-            </div>
-            <div class="category">
-                <a href="products.html#accessories">
+                <a href="category.html?category=Accessories" class="category">
                     <img src="https://via.placeholder.com/200?text=Accessories" alt="Accessories">
                     <h3>Accessories</h3>
                 </a>
-            </div>
-            <div class="category">
-                <a href="products.html#cages">
+                <a href="category.html?category=Supplies" class="category">
+                    <img src="https://via.placeholder.com/200?text=Supplies" alt="Supplies">
+                    <h3>Supplies</h3>
+                </a>
+                <a href="category.html?category=Cages" class="category">
                     <img src="https://via.placeholder.com/200?text=Cages" alt="Cages">
                     <h3>Cages</h3>
                 </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section id="featured-products">
-        <h2>Featured Products</h2>
-        <div class="product-container" id="featured-products-list">
-            <!-- Products will be loaded dynamically from JS -->
         </div>
     </section>
 
@@ -67,7 +59,5 @@
             <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
