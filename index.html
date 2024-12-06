@@ -7,41 +7,59 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Online Pet Store</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Shop</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <h1>Welcome to Online Pet Store</h1>
+            <p>Your one-stop shop for all pet needs!</p>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to the Online Pet Store</h1>
-            <p>Your one-stop shop for all your pet's needs</p>
-            <a href="products.html" class="btn">Shop Now</a>
+    <!-- Christmas Sale Banner -->
+    <section id="sale-banner">
+        <h1>🎄 Christmas Sale! 🎄</h1>
+        <p>Shop Now and Get 20% Off! Use Code: <strong>XMAS20</strong></p>
+        <a href="products.html" class="shop-now-btn">Shop Now</a>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Explore Our Categories</h2>
+        <div class="category-container">
+            <div class="category">
+                <img src="https://via.placeholder.com/200?text=Pets" alt="Pets">
+                <h3>Pets</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200?text=Pet+Food" alt="Pet Food">
+                <h3>Pet Food</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200?text=Accessories" alt="Accessories">
+                <h3>Accessories</h3>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/200?text=Cages" alt="Cages">
+                <h3>Cages</h3>
+            </div>
         </div>
     </section>
 
-    <!-- Trending Categories -->
-    <section class="categories">
-        <h2>Explore Our Categories</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="https://via.placeholder.com/300x200?text=Pets" alt="Pets">
-                <h3>Pets</h3>
-                <a href="products.html#pets" class="btn">Shop Now</a>
-            </div>
-            <div class="category-card">
-                <img src="https://via.placeholder.com/300x200?text=Food" alt="Food">
-                <h3>Pet Food</h3>
-                <a href="products.html#food" class="btn">Shop Now</a>
-            </div>
-            <div class="category-card">
-                <img src="https://via.placeholder.com/300x200?text=Supplies" alt="Supplies">
-              
+    <!-- Featured Products -->
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-container" id="featured-products-list">
+            <!-- Products will be loaded dynamically from JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
