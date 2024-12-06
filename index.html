@@ -7,60 +7,41 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Welcome to Our Online Pet Store</h1>
         <nav>
-            <a href="products.html">Shop Now</a>
-            <a href="cart.html">View Cart (<span id="cart-count">0</span>)</a>
+            <div class="logo">Online Pet Store</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Main Section: Product Categories -->
-    <main>
-        <section class="categories">
-            <h2>Explore Our Categories</h2>
-            <div class="categories-container">
-                <!-- Category 1 -->
-                <div class="category-card">
-                    <img src="https://via.placeholder.com/200?text=Dog+Supplies" alt="Dog Supplies">
-                    <h3>Dog Supplies</h3>
-                    <p>Find toys, food, collars, and more for your furry friend.</p>
-                    <a href="products.html?category=dog" class="btn">Shop Dog Supplies</a>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the Online Pet Store</h1>
+            <p>Your one-stop shop for all your pet's needs</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
 
-                <!-- Category 2 -->
-                <div class="category-card">
-                    <img src="https://via.placeholder.com/200?text=Cat+Supplies" alt="Cat Supplies">
-                    <h3>Cat Supplies</h3>
-                    <p>Explore cozy beds, scratching posts, and delicious treats.</p>
-                    <a href="products.html?category=cat" class="btn">Shop Cat Supplies</a>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="category-card">
-                    <img src="https://via.placeholder.com/200?text=Bird+Supplies" alt="Bird Supplies">
-                    <h3>Bird Supplies</h3>
-                    <p>Discover bird cages, feeders, and healthy bird food.</p>
-                    <a href="products.html?category=bird" class="btn">Shop Bird Supplies</a>
-                </div>
-
-                <!-- Category 4 -->
-                <div class="category-card">
-                    <img src="https://via.placeholder.com/200?text=Aquatic+Supplies" alt="Aquatic Supplies">
-                    <h3>Aquatic Supplies</h3>
-                    <p>Get aquariums, filters, and accessories for your fish.</p>
-                    <a href="products.html?category=aquatic" class="btn">Shop Aquatic Supplies</a>
-                </div>
+    <!-- Trending Categories -->
+    <section class="categories">
+        <h2>Explore Our Categories</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200?text=Pets" alt="Pets">
+                <h3>Pets</h3>
+                <a href="products.html#pets" class="btn">Shop Now</a>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Online Pet Store. All Rights Reserved.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200?text=Food" alt="Food">
+                <h3>Pet Food</h3>
+                <a href="products.html#food" class="btn">Shop Now</a>
+            </div>
+            <div class="category-card">
+                <img src="https://via.placeholder.com/300x200?text=Supplies" alt="Supplies">
+              
