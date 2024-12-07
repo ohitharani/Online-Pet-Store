@@ -1,49 +1,42 @@
-<!-- pets-category.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pets - Online Pet Store</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets Category</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop Now</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cart.html">Cart</a>
-  </nav>
+    <main>
+        <h1>Pets Category</h1>
+        <div class="product-grid">
+            <!-- Example Product 1 -->
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/1699115/pexels-photo-1699115.jpeg" alt="Dog Collar">
+                <h3>Dog Collar</h3>
+                <p>High-quality leather dog collar for all sizes.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
+            <!-- Example Product 2 -->
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1616363807382-5b4406d5f0f5" alt="Dog Toy">
+                <h3>Interactive Dog Toy</h3>
+                <p>Fun toy for your dog to play and interact with.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
+        </div>
+    </main>
 
-  <!-- Pets Category Banner -->
-  <header>
-    <img src="images/pets-category.jpg" alt="Pets Category Banner" class="category-banner">
-    <h1>Shop Our Pets Collection</h1>
-    <p>Explore our diverse range of pets for sale at affordable prices!</p>
-  </header>
-
-  <!-- Products Section (Pets) -->
-  <section class="products">
-    <div class="product-item">
-      <img src="images/product1.jpg" alt="Dog Toy - Plush Squeaky">
-      <h2>Dog Toy - Plush Squeaky</h2>
-      <p>$15.99</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-    <div class="product-item">
-      <img src="images/product2.jpg" alt="Cat Bed - Soft and Cozy">
-      <h2>Cat Bed - Soft and Cozy</h2>
-      <p>$25.99</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-    <!-- More products can be added here -->
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <footer>
+        <p>&copy; 2024 Online Pet Store. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
