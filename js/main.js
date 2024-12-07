@@ -1,6 +1,6 @@
 // List of products
 const products = [
-    { id: 1, name: "Dog Toy - Plush Squeaky", price: 15.99, imageUrl: "images/product1.jpg", category: "Pets" },
+    { id: 1, name: "Dog Toy - Plush Squeaky", price: 15.99, imageUrl: "images/Dog Toy_Plush Squeaky_1.jpg", category: "Pets" },
     { id: 2, name: "Cat Bed - Cozy Design", price: 25.50, imageUrl: "images/product2.jpg", category: "Pets" },
     { id: 3, name: "Bird Feeder - Wooden", price: 12.99, imageUrl: "images/product3.jpg", category: "Pets" },
     { id: 4, name: "Dog Collar - Adjustable", price: 9.99, imageUrl: "images/product4.jpg", category: "Accessories" },
