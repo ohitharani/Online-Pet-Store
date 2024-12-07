@@ -1,36 +1,49 @@
+<!-- category.html (template for each category page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Category - Online Pet Store</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category - Online Pet Store</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="main-header">
-        <div class="container">
-            <h1>Category: <span id="category-title">All</span></h1>
-            <a href="index.html" class="btn">Home</a>
-        </div>
-    </header>
 
-    <!-- Products Section -->
-    <section id="product-list">
-        <div class="container">
-            <div class="product-container" id="product-container">
-                <!-- Products will be dynamically loaded here -->
-            </div>
-        </div>
-    </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cart.html">Cart</a>
+  </nav>
 
-    <!-- Footer -->
-    <footer id="main-footer">
-        <div class="container">
-            <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
-        </div>
-    </footer>
+  <!-- Category Banner -->
+  <header>
+    <img src="images/pets-category.jpg" alt="Category Banner" class="category-banner">
+    <h1>Shop Our Pets Collection</h1>
+    <p>Explore a wide variety of pets, pet food, and accessories at affordable prices!</p>
+  </header>
 
-    <script src="js/main.js"></script>
+  <!-- Products Section -->
+  <section class="products">
+    <div class="product-item">
+      <img src="images/product1.jpg" alt="Dog Toy - Plush Squeaky">
+      <h2>Dog Toy - Plush Squeaky</h2>
+      <p>$15.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product-item">
+      <img src="images/product2.jpg" alt="Cat Bed - Soft and Cozy">
+      <h2>Cat Bed - Soft and Cozy</h2>
+      <p>$25.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <!-- Add more products here -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
