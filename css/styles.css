@@ -9,7 +9,7 @@
 .hero-banner {
     position: relative;
     height: 100vh; /* Full screen height */
-    overflow: hidden;
+    
 }
 
 .hero-banner::before {
