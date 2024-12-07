@@ -56,6 +56,13 @@
     background-color: #C70039; /* Button hover color */
 }
 
+body {
+    background-image: url('images/Background_image_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Navigation Bar */
 header nav {
     display: flex;
