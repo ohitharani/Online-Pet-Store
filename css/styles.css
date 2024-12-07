@@ -39,11 +39,10 @@ nav {
 
 /* Homepage Banner Section with Background Image */
 .hero-banner {
-    background-image: url('https://images.pexels.com/photos/2133366/pexels-photo-2133366.jpeg');
+    background-image: url('images/Background_image_1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;  /* Ensures the hero section takes up the full viewport height */
-    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
