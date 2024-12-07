@@ -1,49 +1,42 @@
-<!-- food-category.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pet Food - Online Pet Store</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Category</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop Now</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cart.html">Cart</a>
-  </nav>
+    <main>
+        <h1>Food Category</h1>
+        <div class="product-grid">
+            <!-- Example Product 1 -->
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/2133366/pexels-photo-2133366.jpeg" alt="Healthy Pet Food">
+                <h3>Healthy Pet Food</h3>
+                <p>High-quality food for a healthy and happy pet.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
+            <!-- Example Product 2 -->
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1578944052959-66f3f22b3d50" alt="Premium Pet Snacks">
+                <h3>Premium Pet Snacks</h3>
+                <p>Specially crafted treats for your pets to enjoy.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
+        </div>
+    </main>
 
-  <!-- Pet Food Category Banner -->
-  <header>
-    <img src="images/food-category.jpg" alt="Pet Food Category Banner" class="category-banner">
-    <h1>Shop Our Pet Food Collection</h1>
-    <p>Find high-quality food for your pets at discounted prices!</p>
-  </header>
-
-  <!-- Products Section (Pet Food) -->
-  <section class="products">
-    <div class="product-item">
-      <img src="images/product3.jpg" alt="Dry Dog Food - Healthy Mix">
-      <h2>Dry Dog Food - Healthy Mix</h2>
-      <p>$29.99</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-    <div class="product-item">
-      <img src="images/product4.jpg" alt="Organic Cat Food - Premium">
-      <h2>Organic Cat Food - Premium</h2>
-      <p>$19.99</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
-    <!-- More products can be added here -->
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Online Pet Store. All rights reserved.</p>
-  </footer>
-
-  <script src="js/main.js"></script>
+    <footer>
+        <p>&copy; 2024 Online Pet Store. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
