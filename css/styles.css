@@ -1,105 +1,94 @@
-/* General body and reset styles */
-body {
-    font-family: Arial, sans-serif;
+/* General Reset for Margins and Padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-/* Header styles */
-header {
-    background-color: #333;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: background-color 0.3s;
-}
-
-.nav-link:hover {
-    background-color: #666;
-    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 /* Homepage Banner Section with Background Image */
 .hero-banner {
-    background-image: url('images/Background_image_1.jpg');
+    background-image: url('images/Background_image_1.jpg'); /* Path to background image */
     background-size: cover;
     background-position: center;
     height: 100vh;  /* Ensures the hero section takes up the full viewport height */
+    width: 100%;
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 20px; /* Add padding to avoid text touching the edges on smaller screens */
+    padding: 0 20px;
 }
 
 .hero-banner h1 {
-    font-size: 36px;
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
 .hero-banner p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .shop-now-btn {
-    background-color: #ff4500;
-    color: white;
+    background-color: #FF5733; /* Stylish button color */
     padding: 15px 30px;
-    font-size: 18px;
     text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .shop-now-btn:hover {
-    background-color: #e04e00;
+    background-color: #C70039; /* Button hover color */
+}
+
+/* Navigation Bar */
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+header nav a:hover {
+    color: #FF5733; /* Highlight on hover */
 }
 
 /* Categories Section */
 .categories {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 50px 20px;
+    background-color: #f8f8f8;
 }
 
 .category-item {
-    width: 250px;
     text-align: center;
-    margin-bottom: 20px;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .category-item img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .category-item p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -108,9 +97,6 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
+    padding: 20px;
+    margin-top: 50px;
 }
