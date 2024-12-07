@@ -100,3 +100,47 @@ footer {
     padding: 20px;
     margin-top: 50px;
 }
+
+/* Product container that holds all products */
+.products {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping if the items exceed the container's width */
+    justify-content: space-around;  /* Space between items */
+    gap: 20px;  /* Space between the product items */
+    padding: 20px;
+}
+
+/* Individual product container */
+.product {
+    width: 30%;  /* Set the width to 30% of the container */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Image style for resizing */
+.product img {
+    width: 100%;  /* Make image fill the width of the product container */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;  /* Optional: adds rounded corners to images */
+}
+
+/* Optional: add hover effect */
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    color: #FF5733;  /* Price color */
+    margin-top: 10px;
+}
+
