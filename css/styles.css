@@ -144,3 +144,15 @@ footer {
     margin-top: 10px;
 }
 
+@media (max-width: 768px) {
+    .product {
+        width: 48%;  /* Two products per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 100%;  /* One product per row on small screens */
+    }
+}
+
