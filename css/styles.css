@@ -6,10 +6,18 @@
 }
 
 /* Homepage Banner Section with Background Image */
+
 .hero-banner {
     position: relative;
     height: 100vh; /* Full screen height */
     overflow: hidden;
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center-align text inside the banner */
+    padding: 20px; /* Optional: Add padding for spacing */
+    background: none; /* No color overlay */
 }
 
 .hero-banner::before {
