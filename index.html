@@ -5,40 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Pet Store</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="js/main.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">Online Pet Store</a>
-            <a href="cart.html" class="cart-icon">Cart (0)</a>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop Now</a>
+            <a href="cart.html">Cart</a>
         </nav>
     </header>
 
     <main>
-        <section class="banner">
-            <div class="banner-content">
-                <h1>Shop Now - 20% Discount this Christmas!</h1>
-                <p>Use code <strong>XMAS20</strong> for 20% off your purchase.</p>
-                <button class="shop-now-btn" onclick="window.location.href='products.html'">Shop Now</button>
-            </div>
+        <!-- Homepage Banner Section with Background Image -->
+        <section class="hero-banner">
+            <h1>Welcome to Our Online Pet Store!</h1>
+            <p>Get everything you need for your furry friends</p>
+            <a href="products.html" class="shop-now-btn">Shop Now - Get 20% Off with Code: XMAS20</a>
         </section>
 
+        <!-- Categories Section -->
         <section class="categories">
-            <h2>Browse Categories</h2>
-            <div class="category-list">
-                <div class="category-item">
-                    <img src="images/pets-category.jpg" alt="Pets" />
-                    <a href="pets-category.html">Pets</a>
-                </div>
-                <div class="category-item">
-                    <img src="images/food-category.jpg" alt="Pet Food" />
-                    <a href="food-category.html">Pet Food</a>
-                </div>
-                <div class="category-item">
-                    <img src="images/accessories-category.jpg" alt="Accessories" />
-                    <a href="accessories-category.html">Accessories</a>
-                </div>
+            <h2>Shop by Category</h2>
+            <div class="category-item">
+                <a href="pets-category.html">
+                    <img src="https://images.unsplash.com/photo-1560807707-8cc777cc1a63?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8cGV0fGVufDB8fHx8fDE2Nzg5MDA2NDg&ixlib=rb-1.2.1&q=80&w=400" alt="Pets Category">
+                    <p>Pets</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="food-category.html">
+                    <img src="https://images.pexels.com/photos/1678194/pexels-photo-1678194.jpeg" alt="Pet Food Category">
+                    <p>Pet Food</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="accessories-category.html">
+                    <img src="https://images.unsplash.com/photo-1574158622682-d2d706fcd6b1?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8OXx8YWNjb3Nzb3JpZXN8ZW58MHx8fHx8fDE2Nzg5MDAzMzc&ixlib=rb-1.2.1&q=80&w=400" alt="Accessories Category">
+                    <p>Accessories</p>
+                </a>
+            </div>
+            <div class="category-item">
+                <a href="cages-category.html">
+                    <img src="https://images.pexels.com/photos/1650307/pexels-photo-1650307.jpeg" alt="Pet Cages Category">
+                    <p>Pet Cages</p>
+                </a>
             </div>
         </section>
     </main>
