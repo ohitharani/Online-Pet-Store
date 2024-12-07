@@ -1,9 +1,21 @@
 /online-pet-store
     /css
         - styles.css
+    /images
+        - pets-category.jpg
+        - food-category.jpg
+        - accessories-category.jpg
+        - product1.jpg
+        - product2.jpg
+        - product3.jpg
+        - ... (more product images)
     /js
         - main.js
     index.html
     products.html
     cart.html
-
+    category.html
+    pets-category.html
+    food-category.html
+    accessories-category.html
+    README.md (optional)
