@@ -3,36 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Pet Store - Products</title>
+    <title>Shop Now - Online Pet Store</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Online Pet Store</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Shop</a></li>
-                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
-            </ul>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
         </nav>
     </header>
 
-    <!-- Product Section -->
-    <section id="products" class="product-container">
-        <h2>Products</h2>
-        <div id="product-list" class="product-list">
-            <!-- Products will be dynamically loaded here -->
+    <main>
+        <h1>Shop All Products</h1>
+        <div class="product-grid">
+            <!-- Example Product 1 -->
+            <div class="product-item">
+                <img src="https://images.pexels.com/photos/1678194/pexels-photo-1678194.jpeg" alt="Premium Pet Food">
+                <h3>Premium Pet Food</h3>
+                <p>Healthy and delicious food for your pet.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
+            <!-- Example Product 2 -->
+            <div class="product-item">
+                <img src="https://images.unsplash.com/photo-1560807707-8cc777cc1a63" alt="Pet Toy">
+                <h3>Pet Play Toy</h3>
+                <p>Interactive toy for endless fun.</p>
+                <a href="product-details.html" class="view-product-btn">View Product</a>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Online Pet Store</p>
+        <p>&copy; 2024 Online Pet Store. All Rights Reserved.</p>
     </footer>
-
 </body>
 </html>
