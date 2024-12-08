@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
     box-sizing: border-box;
 }
 
@@ -16,8 +17,8 @@
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
-    padding: 20px; /* Optional: Add padding for spacing */
-    background: none; /* No color overlay */
+    padding: 100px 20px; /* Optional: Add padding for spacing */
+    
 }
 
 .hero-banner::before {
@@ -29,12 +30,13 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    color: white;
     animation: backgroundSlideshow 15s infinite;
     z-index: -1; /* Ensure it sits behind other content */
 }
 
 @keyframes backgroundSlideshow {
-    0% { background-image: url('images/Background_image_1.jpg')!important; }
+    15% { background-image: url('images/Background_image_1.jpg&ixlib=rb-1.2.1&q=80&w=1200')!important; }
     33% { background-image: url('images/Background_image_5.jpg'); }
     66% { background-image: url('images/Background_image_6.jpg'); }
     100% { background-image: url('images/Background_image_2.jpg'); }
