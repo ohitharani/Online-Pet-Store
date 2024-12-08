@@ -25,38 +25,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Homepage Banner Section with Background Image */
-/*.hero-banner {
-    background-image: url('images/Background_image_1.jpg'); /* Single background image */
-    background-size: cover;
-    background-position: center;
-    /*position: relative;*/
-    height: 100vh; /* Full screen height */
-    overflow: hidden;
-    display: flex; /* Enable flexbox for alignment */
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center-align text inside the banner */
-    padding: 20px; /* Optional: Add padding for spacing */
-}*/
-
-/*.hero-banner h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}/*
-
-/*.hero-banner p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}*/
-
 .shop-now-btn {
     background-color: #FF5733; /* Stylish button color */
     padding: 15px 30px;
@@ -139,57 +107,64 @@ footer {
 }
 
 /* Product container that holds all products */
+/* Container for Products */
 .products {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping if the items exceed the container's width */
-    justify-content: space-around; /* Space between items */
-    gap: 20px; /* Space between the product items */
+    flex-wrap: wrap;
+    justify-content: center; /* Center products within the container */
+    gap: 20px; /* Add space between items */
     padding: 20px;
 }
 
+/* Individual Product Card */
 .product {
-    width: 30%; /* Set the width to 30% of the container */
+    width: 300px; /* Fixed width for uniform size */
     text-align: center;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
     background-color: #f4f4f4;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.product img {
-    width: 100%; /* Make image fill the width of the product container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: adds rounded corners to images */
-}
-
+/* Hover Effect */
 .product:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Product Image */
+.product img {
+    width: 100%; /* Fill the card width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure images are cropped uniformly */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Product Title */
 .product h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #333;
 }
 
+/* Product Price */
 .product p {
     font-size: 1.2rem;
-    color: #FF5733; /* Price color */
-    margin-top: 10px;
+    color: #FF5733;
+    font-weight: bold;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .product {
-        width: 48%; /* Two products per row on medium screens */
+        width: 45%; /* Two products per row */
     }
 }
 
 @media (max-width: 480px) {
-    .products {
-        gap: 10px; /* Adjust gap for small screens */
-    }
     .product {
-        width: 100%; /* One product per row on small screens */
+        width: 100%; /* One product per row */
     }
 }
