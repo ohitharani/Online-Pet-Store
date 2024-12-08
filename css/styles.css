@@ -13,7 +13,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* Ensures the image covers the whole section */
-    /*background-color: #e0d2c2; /* Fallback color in case image is unavailable */
+    /*background-color: #e0d2c2;*/ /* Fallback color in case image is unavailable */
     color: white; /* Adjust text color for better contrast */
 }
 
