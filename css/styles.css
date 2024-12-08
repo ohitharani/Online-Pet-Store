@@ -7,9 +7,13 @@ body {
 
 /* Hero Section Styling */
 .hero-banner {
-    color: black;
+    color: white;
     text-align: center;
     padding: 100px 20px;
+    opacity: 1;
+    background: none; /* Ensure no background overlay */
+    background-color: #f96464; /* Existing background color */
+    color: white; /* Adjust text color for better contrast */
 }
 
 .hero-banner h1 {
