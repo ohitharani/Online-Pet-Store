@@ -11,8 +11,8 @@ body {
     text-align: center;
     padding: 100px 20px;
     opacity: 1;
-    background: none; /* Ensure no background overlay */
-    background-color: #e0d2c2; /* Existing background color */
+    background: url('https://raw.githubusercontent.com/username/repository/branch/path/to/image.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the whole section */
     color: white; /* Adjust text color for better contrast */
 }
 
