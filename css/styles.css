@@ -2,19 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f96464; /* No background image, just solid color */
-    background-image: url('images/Background_image_1.jpg');
+    background-color: #e0d2c2; /* No background image, just solid color */
 }
 
 /* Hero Section Styling */
 .hero-banner {
-    background-image: url('images/Background_image_1.jpg');
     color: white;
     text-align: center;
     padding: 100px 20px;
     opacity: 1;
     background: none; /* Ensure no background overlay */
-    background-color: #f96464; /* Existing background color */
+    background-color: #e0d2c2; /* Existing background color */
     color: white; /* Adjust text color for better contrast */
 }
 
