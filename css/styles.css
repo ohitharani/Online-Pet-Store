@@ -1,24 +1,19 @@
-/* General Reset for Margins and Padding */
-* {
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
-/* Homepage Banner Section with Background Image */
+/* Hero Section Styling */
 .hero-banner {
-    position: relative;
-    height: 100vh; /* Full screen height */
-    overflow: hidden;
-    display: flex; /* Enable flexbox for alignment */
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center-align text inside the banner */
-    padding: 20px; /* Optional: Add padding for spacing */
-    background-image: url('images/Background_image_1.jpg'); /* Single background image */
+    background-image: url('https://images.unsplash.com/photo-1560807707-8cc777cc1a63?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8cGV0fGVufDB8fHx8fDE2Nzg5MDA2NDg&ixlib=rb-1.2.1&q=80&w=1200');
     background-size: cover;
     background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 .hero-banner h1 {
@@ -32,138 +27,42 @@
 }
 
 .shop-now-btn {
-    background-color: #FF5733; /* Stylish button color */
-    padding: 15px 30px;
-    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #ff5c8d;
     color: white;
     font-size: 1.2rem;
+    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .shop-now-btn:hover {
-    background-color: #C70039; /* Button hover color */
+    background-color: #ff3460;
 }
 
-.shop-now-btn:focus {
-    outline: 2px solid #FFC300;
-    outline-offset: 3px;
-}
-
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Navigation Bar */
-header nav {
-    display: flex;
-    justify-content: center;
-    background-color: #333;
-    padding: 15px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-header nav a:hover {
-    color: #FF5733; /* Highlight on hover */
-}
-
-/* Categories Section */
+/* Category Section Styling */
 .categories {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
     padding: 50px 20px;
-    background-color: #f8f8f8;
-}
-
-.category-item {
     text-align: center;
-    flex: 1;
-    margin: 0 10px;
 }
 
 .category-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
     border-radius: 10px;
 }
 
 .category-item p {
     margin-top: 10px;
     font-size: 1.2rem;
-    font-weight: bold;
+    color: #333;
 }
 
-/* Footer */
 footer {
-    background-color: #333;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
-}
-
-/* Product container that holds all products */
-.products {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping if the items exceed the container's width */
-    justify-content: space-around; /* Space between items */
-    gap: 20px; /* Space between the product items */
-    padding: 20px;
-}
-
-.product {
-    width: 30%; /* Set the width to 30% of the container */
-    text-align: center;
-    box-sizing: border-box;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-}
-
-.product img {
-    width: 100%; /* Make image fill the width of the product container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: adds rounded corners to images */
-}
-
-.product:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.product h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-.product p {
-    font-size: 1.2rem;
-    color: #FF5733; /* Price color */
-    margin-top: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .product {
-        width: 48%; /* Two products per row on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .products {
-        gap: 10px; /* Adjust gap for small screens */
-    }
-    .product {
-        width: 100%; /* One product per row on small screens */
-    }
 }
