@@ -2,14 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* No background image, just solid color */
 }
 
 /* Hero Section Styling */
 .hero-banner {
-    background-image: url('images/Background_image_1.jpg');
-    background-size: cover;
-    background-position: center;
+    /* Remove background image */
+    background-color: #f8f8f8; /* Optional: You can set a solid background color for the hero section */
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -25,6 +24,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Shop Now Button Styling */
 .shop-now-btn {
     background-color: #FF5733; /* Stylish button color */
     padding: 15px 30px;
@@ -42,12 +42,6 @@ body {
 .shop-now-btn:focus {
     outline: 2px solid #FFC300;
     outline-offset: 3px;
-}
-
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 /* Navigation Bar */
@@ -107,7 +101,6 @@ footer {
 }
 
 /* Product container that holds all products */
-/* Container for Products */
 .products {
     display: flex;
     flex-wrap: wrap; /* Ensure items wrap on smaller screens */
