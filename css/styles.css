@@ -6,7 +6,6 @@
 }
 
 /* Homepage Banner Section with Background Image */
-
 .hero-banner {
     position: relative;
     height: 100vh; /* Full screen height */
@@ -17,6 +16,9 @@
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
     padding: 20px; /* Optional: Add padding for spacing */
+    background-image: url('images/Background_image_1.jpg'); /* Fallback for initial load */
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-banner::before {
@@ -30,6 +32,7 @@
     background-position: center;
     animation: backgroundSlideshow 15s infinite;
     z-index: -1; /* Ensure it sits behind other content */
+    will-change: background-image; /* Performance optimization */
 }
 
 @keyframes backgroundSlideshow {
@@ -61,6 +64,11 @@
 
 .shop-now-btn:hover {
     background-color: #C70039; /* Button hover color */
+}
+
+.shop-now-btn:focus {
+    outline: 2px solid #FFC300;
+    outline-offset: 3px;
 }
 
 body {
@@ -128,15 +136,14 @@ footer {
 /* Product container that holds all products */
 .products {
     display: flex;
-    flex-wrap: wrap;  /* Allow wrapping if the items exceed the container's width */
-    justify-content: space-around;  /* Space between items */
-    gap: 20px;  /* Space between the product items */
+    flex-wrap: wrap; /* Allow wrapping if the items exceed the container's width */
+    justify-content: space-around; /* Space between items */
+    gap: 20px; /* Space between the product items */
     padding: 20px;
 }
 
-/* Individual product container */
 .product {
-    width: 30%;  /* Set the width to 30% of the container */
+    width: 30%; /* Set the width to 30% of the container */
     text-align: center;
     box-sizing: border-box;
     padding: 10px;
@@ -144,14 +151,12 @@ footer {
     border-radius: 10px;
 }
 
-/* Image style for resizing */
 .product img {
-    width: 100%;  /* Make image fill the width of the product container */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Optional: adds rounded corners to images */
+    width: 100%; /* Make image fill the width of the product container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners to images */
 }
 
-/* Optional: add hover effect */
 .product:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
@@ -164,19 +169,22 @@ footer {
 
 .product p {
     font-size: 1.2rem;
-    color: #FF5733;  /* Price color */
+    color: #FF5733; /* Price color */
     margin-top: 10px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .product {
-        width: 48%;  /* Two products per row on medium screens */
+        width: 48%; /* Two products per row on medium screens */
     }
 }
 
 @media (max-width: 480px) {
+    .products {
+        gap: 10px; /* Adjust gap for small screens */
+    }
     .product {
-        width: 100%;  /* One product per row on small screens */
+        width: 100%; /* One product per row on small screens */
     }
 }
-
