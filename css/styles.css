@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0d2c2; /* just solid color */
 }
 
 /* Hero Section Styling */
@@ -10,9 +9,11 @@ body {
     color: white;
     text-align: center;
     padding: 100px 20px;
-    opacity: 1;
-    background-image: url('https://raw.githubusercontent.com/ohitharani/Online-Pet-Store/main/images/Background_image_1.jpg') no-repeat center center;
+    background-image: url('https://raw.githubusercontent.com/ohitharani/Online-Pet-Store/main/images/Background_image_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover; /* Ensures the image covers the whole section */
+    background-color: #e0d2c2; /* Fallback color in case image is unavailable */
     color: white; /* Adjust text color for better contrast */
 }
 
