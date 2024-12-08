@@ -17,7 +17,6 @@
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
     padding: 20px; /* Optional: Add padding for spacing */
-    background: none; /* No color overlay */
 }
 
 .hero-banner::before {
