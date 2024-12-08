@@ -3,11 +3,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f96464; /* No background image, just solid color */
-    background-image: url('');
+    background-image: url('images/Background_image_1.jpg');
 }
 
 /* Hero Section Styling */
 .hero-banner {
+    background-image: url('images/Background_image_1.jpg');
     color: white;
     text-align: center;
     padding: 100px 20px;
