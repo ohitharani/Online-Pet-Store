@@ -35,7 +35,7 @@
 }
 
 @keyframes backgroundSlideshow {
-    15% { background-image: url('images/Background_image_1.jpg&ixlib=rb-1.2.1&q=80&w=1200')!important; }
+    0% { background-image: url('images/Background_image_1.jpg&ixlib=rb-1.2.1&q=80&w=1200')!important; }
     33% { background-image: url('images/Background_image_5.jpg'); }
     66% { background-image: url('images/Background_image_6.jpg'); }
     100% { background-image: url('images/Background_image_2.jpg'); }
