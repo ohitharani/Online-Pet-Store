@@ -7,7 +7,10 @@
 
 /* Homepage Banner Section with Background Image */
 .hero-banner {
-    position: relative;
+    background-image: url('images/Background_image_1.jpg'); /* Single background image */
+    background-size: cover;
+    background-position: center;
+    /*position: relative;*/
     height: 100vh; /* Full screen height */
     overflow: hidden;
     display: flex; /* Enable flexbox for alignment */
@@ -16,9 +19,6 @@
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
     padding: 20px; /* Optional: Add padding for spacing */
-    background-image: url('images/Background_image_1.jpg'); /* Single background image */
-    background-size: cover;
-    background-position: center;
 }
 
 .hero-banner h1 {
