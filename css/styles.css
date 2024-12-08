@@ -11,6 +11,7 @@ body {
     text-align: center;
     padding: 100px 20px;
     opacity: 1;
+    background-image: url('images/Background_image_1.jpg');
     background: url('https://raw.githubusercontent.com/ohitharani/Online-Pet-Store/blob/main/images/Background_image_1.jpg') no-repeat center center;
     background-size: cover; /* Ensures the image covers the whole section */
     color: white; /* Adjust text color for better contrast */
