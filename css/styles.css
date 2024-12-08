@@ -110,61 +110,62 @@ footer {
 /* Container for Products */
 .products {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Center products within the container */
-    gap: 20px; /* Add space between items */
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: space-evenly; /* Space out items evenly */
+    gap: 20px; /* Space between items */
     padding: 20px;
 }
 
-/* Individual Product Card */
+/* Individual product cards */
 .product {
-    width: 300px; /* Fixed width for uniform size */
+    width: 30%; /* Width to make products aligned */
+    max-width: 320px; /* Prevent the product card from becoming too wide on large screens */
     text-align: center;
     box-sizing: border-box;
     padding: 15px;
     background-color: #f4f4f4;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect */
+/* Hover effect for product cards */
 .product:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Product Image */
+/* Product image */
 .product img {
-    width: 100%; /* Fill the card width */
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover; /* Ensure images are cropped uniformly */
-    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Image fills the width of the card */
+    height: 200px; /* Fixed height to maintain uniformity */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 8px;
 }
 
-/* Product Title */
+/* Product name styling */
 .product h3 {
     font-size: 1.4rem;
-    margin: 15px 0 10px;
+    margin-top: 15px;
     color: #333;
 }
 
-/* Product Price */
+/* Product price styling */
 .product p {
     font-size: 1.2rem;
-    color: #FF5733;
+    color: #FF5733; /* Highlight the price color */
     font-weight: bold;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .product {
-        width: 45%; /* Two products per row */
+        width: 48%; /* Two products per row on medium screens */
     }
 }
 
 @media (max-width: 480px) {
     .product {
-        width: 100%; /* One product per row */
+        width: 100%; /* One product per row on small screens */
     }
 }
