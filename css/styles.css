@@ -9,7 +9,7 @@ body {
 .hero-banner {
     /* Remove background image */
     background-color: #f8f8f8; /* Optional: You can set a solid background color for the hero section */
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 20px;
 }
