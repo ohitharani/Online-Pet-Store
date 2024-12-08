@@ -16,30 +16,9 @@
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
     padding: 20px; /* Optional: Add padding for spacing */
-    background-image: url('images/Background_image_1.jpg'); /* Fallback for initial load */
+    background-image: url('images/Background_image_1.jpg'); /* Single background image */
     background-size: cover;
     background-position: center;
-}
-
-.hero-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: backgroundSlideshow 15s infinite;
-    z-index: -1; /* Ensure it sits behind other content */
-    will-change: background-image; /* Performance optimization */
-}
-
-@keyframes backgroundSlideshow {
-    0% { background-image: url('images/Background_image_1.jpg'); }
-    33% { background-image: url('images/Background_image_5.jpg'); }
-    66% { background-image: url('images/Background_image_6.jpg'); }
-    100% { background-image: url('images/Background_image_2.jpg'); }
 }
 
 .hero-banner h1 {
