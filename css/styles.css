@@ -1,12 +1,38 @@
-/* General Reset for Margins and Padding */
-* {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Hero Section Styling */
+.hero-banner {
+    background-image: url('https://images.unsplash.com/photo-1560807707-8cc777cc1a63?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8cGV0fGVufDB8fHx8fDE2Nzg5MDA2NDg&ixlib=rb-1.2.1&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-banner p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* Homepage Banner Section with Background Image */
-.hero-banner {
+/*.hero-banner {
     background-image: url('images/Background_image_1.jpg'); /* Single background image */
     background-size: cover;
     background-position: center;
@@ -19,17 +45,17 @@
     align-items: center; /* Center items horizontally */
     text-align: center; /* Center-align text inside the banner */
     padding: 20px; /* Optional: Add padding for spacing */
-}
+}*/
 
-.hero-banner h1 {
+/*.hero-banner h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-}
+}/*
 
-.hero-banner p {
+/*.hero-banner p {
     font-size: 1.5rem;
     margin-bottom: 20px;
-}
+}*/
 
 .shop-now-btn {
     background-color: #FF5733; /* Stylish button color */
