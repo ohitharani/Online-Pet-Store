@@ -32,10 +32,15 @@ function loadCategoryProducts(category) {
     });
 }
 
-// Add product to cart (simplified for demo purposes)
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 function addToCart(productId) {
-    alert("Product added to cart!");
-    // Implement cart functionality (localStorage, cart array, etc.)
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart)); // Save cart to localStorage
+        alert(`${product.name} added to cart!`);
+    }
 }
 
 // Call this function to initialize the product list when the page loads
