@@ -1,26 +1,26 @@
 Online-Pet-Store/
 ├── css/
-│   └── styles.css
+│   └── styles.css                  # CSS file for styling the website
 ├── images/
-│   └── pets-category.jpg
-│   └── food-category.jpg
-│   └── accessories-category.jpg
-│   └── product1.jpg
-│   └── product2.jpg
-│   └── product3.jpg
-│   └── (various image files)
+│   ├── pets-category.jpg           # Image for pets category
+│   ├── food-category.jpg           # Image for food category
+│   ├── accessories-category.jpg    # Image for accessories category
+│   ├── product1.jpg                # Image for Product 1
+│   ├── product2.jpg                # Image for Product 2
+│   ├── product3.jpg                # Image for Product 3
+│   └── (additional image files)    # Other images used in the project
 ├── java/
-│   └── DiscountCalculator.java   # Java file for discount calculations
+│   └── DiscountCalculator.java     # Java file handling discount logic
 ├── js/
-│   └── main.js              # Main JavaScript file
-├── README.md                # Initial project description and instructions
-├── accessories-category.html # Accessories category page
-├── cages-category.html       # Cages category page
-├── cart.html                 # Cart page
-├── category.html             # General category page
-├── food-category.html        # Food category page
-├── index.html                # Homepage
-├── login.html                # Login page
-├── pets-category.html        # Pets category page
-├── products.html             # Products page
-└── signup.html               # Signup page
+│   └── main.js                     # Main JavaScript file for frontend interaction
+├── README.md                       # Project overview and setup instructions
+├── accessories-category.html       # Page for accessories category
+├── cages-category.html             # Page for cages category
+├── cart.html                       # Page for shopping cart functionality
+├── category.html                   # General template for product categories
+├── food-category.html              # Page for food category
+├── index.html                      # Homepage of the website
+├── login.html                      # User login page
+├── pets-category.html              # Page for pets category
+├── products.html                   # Page displaying products
+└── signup.html                     # User signup page
