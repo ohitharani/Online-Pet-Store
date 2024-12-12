@@ -15,9 +15,11 @@ The Online Pet Store is a user-friendly e-commerce platform designed specificall
 #1. Frontend
 HTML5, CSS3, JavaScript
 Responsive design with custom styling in styles.css
+
 #2. Backend
 Java: DiscountCalculator.java for backend logic such as discount computation.
 Node.js: Backend server setup with Express.js (optional integration).
+
 #3. Database
 MongoDB (Optional): For persistent storage of user data and product information.
 
