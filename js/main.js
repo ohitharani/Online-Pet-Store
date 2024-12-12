@@ -10,8 +10,10 @@ const products = [
     { id: 8, name: "Cat Scratching Post - Multi-Level", price: 49.99, imageUrl: "images/product8.jpg", category: "Accessories" },
     { id: 9, name: "Aquarium Kit - Complete Setup", price: 199.99, imageUrl: "images/product9.jpg", category: "Pets" },
     { id: 10, name: "Pet Carrier - Travel Friendly", price: 39.99, imageUrl: "images/product10.jpg", category: "Accessories" },
-    // Add more products here...
 ];
+
+// Initialize the cart
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Load products based on category selection
 function loadCategoryProducts(category) {
@@ -32,8 +34,7 @@ function loadCategoryProducts(category) {
     });
 }
 
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
+// Add a product to the cart
 function addToCart(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
@@ -43,5 +44,40 @@ function addToCart(productId) {
     }
 }
 
-// Call this function to initialize the product list when the page loads
+// Calculate the cart total
+function calculateCartTotal() {
+    return cart.reduce((total, item) => total + item.price, 0);
+}
+
+// Apply promo code discount
+function applyPromoCode(promoCode) {
+    const validPromoCode = "XMAS20";
+    const discountPercentage = 20;
+
+    if (promoCode === validPromoCode) {
+        const cartTotal = calculateCartTotal();
+        const discount = (cartTotal * discountPercentage) / 100;
+        return { discountedTotal: cartTotal - discount, discount };
+    } else {
+        return { discountedTotal: calculateCartTotal(), discount: 0 };
+    }
+}
+
+// Checkout process
+function checkout() {
+    const promoCode = prompt("Enter promo code (if any):");
+    const { discountedTotal, discount } = applyPromoCode(promoCode);
+
+    if (discount > 0) {
+        alert(`Promo code applied! You saved $${discount.toFixed(2)}. Final total: $${discountedTotal.toFixed(2)}`);
+    } else {
+        alert(`No valid promo code applied. Total: $${discountedTotal.toFixed(2)}`);
+    }
+
+    // Clear the cart after checkout
+    cart = [];
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Load products when the page loads
 loadCategoryProducts("Pets"); // Example: load products from the "Pets" category
