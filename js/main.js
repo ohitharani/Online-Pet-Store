@@ -15,6 +15,25 @@ const products = [
 // Initialize the cart
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+function loginUser() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (!email || !password) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    // Simulate API request for authentication
+    if (email === "test@example.com" && password === "password123") {
+        alert("Login successful!");
+        localStorage.setItem("user", JSON.stringify({ email }));
+        window.location.href = "products.html"; // Redirect on successful login
+    } else {
+        alert("Invalid credentials. Please try again.");
+    }
+}
+
 // Load products based on category selection
 function loadCategoryProducts(category) {
     const filteredProducts = products.filter(product => product.category === category);
