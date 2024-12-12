@@ -34,6 +34,31 @@ function loginUser() {
     }
 }
 
+function registerUser() {
+    const username = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (!username || !email || !password) {
+        alert("Please fill out all fields.");
+        return;
+    }
+
+    // Simulate saving user information
+    const newUser = { username, email, password };
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userExists = users.find(user => user.email === email);
+
+    if (userExists) {
+        alert("An account with this email already exists.");
+    } else {
+        users.push(newUser);
+        localStorage.setItem("users", JSON.stringify(users));
+        alert("Sign-up successful! You can now log in.");
+        window.location.href = "login.html"; // Redirect to login page
+    }
+}
+
 // Load products based on category selection
 function loadCategoryProducts(category) {
     const filteredProducts = products.filter(product => product.category === category);
